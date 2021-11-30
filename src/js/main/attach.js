@@ -12,7 +12,6 @@ function loadAttach(parent) {
 					$(e).html(data);
 					$(e).removeAttr("attach");
 
-					
 					loadAttach(e);
 				},
 			});

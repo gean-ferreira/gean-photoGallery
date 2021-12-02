@@ -1,5 +1,7 @@
 import $ from "jquery";
 
+import { onLoadHtmlSuccess } from "../main/attach";
+
 const duration = 300;
 
 function filterByType(type) {
@@ -40,4 +42,6 @@ $.fn.typeButtons = function() {
 	return this;
 };
 
-$("[session-types-buttons]").typeButtons();
+onLoadHtmlSuccess(function() {
+	$("[session-types-buttons]").typeButtons();
+});

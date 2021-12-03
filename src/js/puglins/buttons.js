@@ -26,14 +26,14 @@ $.fn.typeButtons = function() {
 
 	const btns = Array.from(types).map((type) => {
 		const btn = $("<button>")
-			.addClass(["btn", "btn-primary"])
+			.addClass(["btn", "btn-info", "my-btn-green"])
 			.html(type);
 		btn.click((e) => filterByType(type));
 		return btn;
 	});
 
 	const btnAll = $("<button>")
-		.addClass(["btn", "btn-primary", "active"])
+		.addClass(["btn", 'btn-info', 'my-btn-green-active'])
 		.html("Todas");
 	btnAll.click((e) => filterByType(null));
 	btns.push(btnAll);

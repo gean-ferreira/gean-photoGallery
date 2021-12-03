@@ -1,1 +1,31 @@
 .my-bg-garnet { background-color: $color-garnet; }
+
+.my-btn-green {
+	background-color: $color-green;
+	border-color: $color-dgreen;
+	border-radius: $size-none;
+  transition: background-color .5s;
+	&:hover {
+		background-color: $color-dgreen;
+		border-color: $color-dgreen;
+	}
+	&:focus {
+		box-shadow: 0 0 0 $btn-focus-width rgba($color-green, 0.5);
+	}
+}
+.my-btn-green-active {
+	background-color: $color-dgreen;
+	border-color: $color-dgreen;
+	border-radius: $size-none;
+	&:hover {
+		background-color: $color-dgreen;
+		border-color: $color-dgreen;
+	}
+	&:focus {
+		box-shadow: 0 0 0 $btn-focus-width rgba($color-green, 0.5);
+	}
+}
+
+.my-bg-green {
+	background-color: $color-green;
+}

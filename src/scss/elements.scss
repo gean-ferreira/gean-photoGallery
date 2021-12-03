@@ -1,0 +1,23 @@
+.jumbotron {
+  background-color: white;
+  margin: 0;
+}
+
+img{
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img:hover {
+  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.22);
+  border: 2px solid #0B4619;
+  transition: 0.4s;
+  transform: scale(1.03);
+}
+
+footer {
+  padding: 3rem 0;
+}

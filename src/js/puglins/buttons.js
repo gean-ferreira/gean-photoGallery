@@ -8,9 +8,12 @@ function filterByType(type) {
 	$("[session-types]").each(function(i, e) {
 		const target = $(this).attr("session-types") === type || type === null;
 		if (target) {
+      $(this).parent().removeClass('d-none')
 			$(this).fadeIn(duration);
 		} else {
-			$(this).fadeOut(duration);
+			$(this).fadeOut(duration, () => {
+        $(this).parent().addClass('d-none')
+      })
 		}
 	});
 }

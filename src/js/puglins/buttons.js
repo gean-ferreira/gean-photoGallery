@@ -2,7 +2,7 @@ import $ from "jquery";
 
 import { onLoadHtmlSuccess } from "../main/attach";
 
-const duration = 300;
+const duration = 1;
 
 function filterByType(type) {
 	$("[session-types]").each(function(i, e) {

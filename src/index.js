@@ -8,3 +8,4 @@ import "bootstrap";
 // JS
 import "./js/main/attach";
 import "./js/puglins/buttons.js"
+import "./js/puglins/modal.js"

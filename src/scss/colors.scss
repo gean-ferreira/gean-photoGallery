@@ -1,10 +1,12 @@
-.my-bg-garnet { background-color: $color-garnet; }
+.my-bg-garnet {
+	background-color: $color-garnet;
+}
 
 .my-btn-green {
 	background-color: $color-green;
 	border-color: $color-dgreen;
 	border-radius: $size-none;
-  transition: background-color .5s;
+	transition: background-color 0.5s;
 	&:hover {
 		background-color: $color-dgreen;
 		border-color: $color-dgreen;

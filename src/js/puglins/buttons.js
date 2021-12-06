@@ -8,12 +8,16 @@ function filterByType(type) {
 	$("[session-types]").each(function(i, e) {
 		const target = $(this).attr("session-types") === type || type === null;
 		if (target) {
-      $(this).parent().removeClass('d-none')
+			$(this)
+				.parent()
+				.removeClass("d-none");
 			$(this).fadeIn(duration);
 		} else {
 			$(this).fadeOut(duration, () => {
-        $(this).parent().addClass('d-none')
-      })
+				$(this)
+					.parent()
+					.addClass("d-none");
+			});
 		}
 	});
 }
@@ -33,7 +37,7 @@ $.fn.typeButtons = function() {
 	});
 
 	const btnAll = $("<button>")
-		.addClass(["btn", 'btn-info', 'my-btn-green-active'])
+		.addClass(["btn", "btn-info", "my-btn-green-active"])
 		.html("Todas");
 	btnAll.click((e) => filterByType(null));
 	btns.push(btnAll);

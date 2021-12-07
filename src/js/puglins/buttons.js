@@ -42,7 +42,7 @@ $.fn.typeButtons = function() {
 	btnAll.click((e) => filterByType(null));
 	btns.push(btnAll);
 
-	const btnGroup = $("<div>").addClass(["btn-group"]);
+	const btnGroup = $("<div>").addClass(["btn-pills text-center px-3"]);
 	btnGroup.append(btns);
 
 	$(this).html(btnGroup);

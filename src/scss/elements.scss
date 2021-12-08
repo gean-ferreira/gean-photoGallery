@@ -12,8 +12,8 @@ img {
 	box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.my-photos > div > img{
-  cursor: pointer;
+.my-photos > div > img {
+	cursor: pointer;
 }
 
 .my-photos > div > img:hover {
@@ -41,7 +41,7 @@ img {
 .modal-content {
 	margin: auto;
 	display: block;
-	max-width: 300px;
+	max-width: 300px; //Mobile small
 }
 
 /* Caption of Modal Image */
@@ -90,15 +90,21 @@ img {
 	cursor: pointer;
 }
 
-/* iPad and screen 1920px */
-@media (min-width: 700px) {
+/* medium and large screen mobile, iPad */
+@media (min-width: 350px) {
 	.modal-content {
-		width: 80%;
-		max-width: 750px;
+		max-width: 350px;
 	}
 }
-@media (min-width: 1720px) {
+@media (min-width: 400px) {
 	.modal-content {
+		width: 95%;
+		max-width: 400px;
+	}
+}
+@media (min-width: 740px) {
+	.modal-content {
+		width: 95%;
 		max-width: 610px;
 	}
 }
